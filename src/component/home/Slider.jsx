@@ -84,20 +84,20 @@ const ClientSlider = () => {
     if (!mounted) return null;
 
     return (
-        <div className="w-full max-w-6xl mx-auto px-10 mb-10">
+        <div className="w-full max-w-6xl mx-auto px-4 md:px-10 mb-10">
             <Slider {...settings} className="slider-custom-dots">
                 {clientLogos.map((logo, index) => (
-                    <div key={index} className="px-3 py-4">
+                    <div key={index} className="px-2 md:px-3 py-4">
                         <div
                             style={{
                                 boxShadow: "0 12px 12px -10px rgba(0,0,0,1)",
                             }}
-                            className="bg-white p-6  border-t-[3px] border-primary flex items-center justify-center h-20 relative group hover:-translate-y-1 transition duration-300">
+                            className="bg-white p-4 md:p-6 border-t-[3px] border-primary flex items-center justify-center h-20 relative group hover:-translate-y-1 transition duration-300">
                             {/* 
                  Since real logos aren't available, using styled text to mimic the cards 
                  Replace <h2> with <img src={logo.src} /> when available 
                */}
-                            <h3 className="font-bold text-xl group-hover:scale-110 transition" style={{ color: logo.color }}>
+                            <h3 className="font-bold text-lg md:text-xl group-hover:scale-110 transition text-center leading-tight" style={{ color: logo.color }}>
                                 {logo.name}
                             </h3>
                         </div>
@@ -117,7 +117,12 @@ const ClientSlider = () => {
             opacity: 1;
         }
         .slider-custom-dots .slick-dots {
-            bottom: -40px;
+            bottom: -30px;
+        }
+        @media (min-width: 768px) {
+            .slider-custom-dots .slick-dots {
+                bottom: -40px;
+            }
         }
       `}</style>
         </div>

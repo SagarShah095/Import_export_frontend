@@ -97,18 +97,18 @@ export default function Navbar() {
   };
 
   return (
-    <div className="fixed bg-white top-0 left-0 right-0 z-50 mx-auto max-w-screen-xl rounded-xl mt-4 h-20 md:h-[6rem] shadow-md md:shadow-none">
-      <div className="flex justify-between items-center md:items-end h-full px-4 md:px-0">
+    <div className="fixed bg-white top-0 left-0 right-0 z-50 mx-auto max-w-screen-xl md:rounded-xl md:mt-4 h-20 lg:h-[6rem] shadow-md lg:shadow-none">
+      <div className="flex justify-between items-center lg:items-end h-full px-4 lg:px-0">
 
         {/* Logo */}
-        <div className="cursor-pointer md:pl-[5rem]" onClick={() => router.push('/')}>
-          <img src="/Logo.jpeg" alt="logo" className="h-16 md:h-24 object-contain" />
+        <div className="cursor-pointer lg:pl-[5rem]" onClick={() => router.push('/')}>
+          <img src="/Logo.jpeg" alt="logo" className="h-16 lg:h-24 object-contain" />
         </div>
 
-        {/* Desktop Nav Items (Hidden on Mobile) */}
+        {/* Desktop Nav Items (Hidden on Mobile/Tablet) */}
         <div
           ref={barRef}
-          className="hidden md:block absolute top-0 right-0 rounded-bl-xl rounded-tr-xl bg-primary w-[80%] h-12 overflow-hidden"
+          className="hidden lg:block absolute top-0 right-0 rounded-bl-xl rounded-tr-xl bg-primary w-[80%] h-12 overflow-hidden"
         >
           {/* 🚚 Animated Truck */}
           <motion.div
@@ -120,7 +120,7 @@ export default function Navbar() {
               damping: 21,
             }}
           >
-            <TbTruck className="hidden lg:block text-white text-5xl" />
+            <TbTruck className="hidden xl:block text-white text-5xl" />
           </motion.div>
 
           {/* Social Icons */}
@@ -132,7 +132,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="hidden md:flex justify-between w-[55%] items-end h-full pb-0">
+        <div className="hidden lg:flex justify-between w-[55%] items-end h-full pb-0">
           {navItems.map((item, index) => (
             <div key={item.name} className="flex">
               <button
@@ -157,8 +157,8 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Hamburger Menu */}
-        <div className="md:hidden flex items-center">
+        {/* Mobile/Tablet Hamburger Menu */}
+        <div className="lg:hidden flex items-center">
           <button onClick={() => setStep(prev => !prev ? 1 : 0)} className="text-3xl text-secondary">
             <RiTruckLine className="hidden" /> {/* Dummy to keep import used if strict */}
             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -172,7 +172,7 @@ export default function Navbar() {
       {/* Mobile Drawer */}
       <div
         className={clsx(
-          "fixed inset-0 z-[60] bg-black/50 transition-opacity duration-300 md:hidden",
+          "fixed inset-0 z-[60] bg-black/50 transition-opacity duration-300 lg:hidden",
           step === 1 ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
         )}
         onClick={() => setStep(0)}
@@ -224,97 +224,3 @@ export default function Navbar() {
     </div>
   );
 }
-
-// "use client";
-
-// import { usePathname, useRouter } from "next/navigation";
-// import { motion } from "framer-motion";
-// import Image from "next/image";
-// import clsx from "clsx";
-// import { RiTruckLine } from "react-icons/ri";
-// import { useEffect, useState } from "react";
-
-// const navItems = [
-//   { name: "Home", href: "/" },
-//   { name: "About Us", href: "/about" },
-//   { name: "Services", href: "/services" },
-//   { name: "Contact Us", href: "/contact" },
-// ];
-
-// export default function Navbar() {
-//   const pathname = usePathname();
-//   const router = useRouter();
-
-//   const getIndexFromPath = () =>
-//     navItems.findIndex((item) => item.href === pathname);
-
-//   const [activeIndex, setActiveIndex] = useState(getIndexFromPath);
-
-//   useEffect(() => {
-//     const newIndex = getIndexFromPath();
-//     if (newIndex !== -1) setActiveIndex(newIndex);
-//   }, [pathname]);
-
-//   return (
-//     <nav className="sticky top-0 z-50 bg-orange-500 shadow-lg">
-//       <div className="max-w-7xl mx-auto px-4">
-//         <div className="flex items-center justify-between h-16">
-//           {/* Logo / Brand */}
-//           <div className="flex items-center gap-2">
-//             <div className="w-9 h-9 bg-white/20 rounded-lg flex items-center justify-center font-bold text-white">
-//               LOGO
-//             </div>
-//             <span className="text-white font-semibold text-lg tracking-wide">
-//               YourBrand
-//             </span>
-//           </div>
-
-//           {/* Desktop Menu */}
-//           <div className="hidden md:flex items-center space-x-6">
-//             <a
-//               href="#"
-//               className="text-white/90 hover:text-white font-medium transition"
-//             >
-//               Home
-//             </a>
-//             <a
-//               href="#"
-//               className="text-white/90 hover:text-white font-medium transition"
-//             >
-//               Templates
-//             </a>
-//             <a
-//               href="#"
-//               className="text-white/90 hover:text-white font-medium transition"
-//             >
-//               Categories
-//             </a>
-//             <a
-//               href="#"
-//               className="text-white/90 hover:text-white font-medium transition"
-//             >
-//               Pricing
-//             </a>
-//           </div>
-
-//           {/* Right Actions */}
-//           <div className="hidden md:flex items-center gap-3">
-//             <button className="px-4 py-2 text-white border border-white/30 rounded-lg hover:bg-white/10 transition">
-//               Login
-//             </button>
-//             <button className="px-4 py-2 bg-white text-orange-500 font-semibold rounded-lg hover:bg-orange-100 transition">
-//               Get Started
-//             </button>
-//           </div>
-
-//           {/* Mobile Menu Button */}
-//           <div className="md:hidden">
-//             <button className="text-white hover:bg-white/10 p-2 rounded-lg transition">
-//               ☰
-//             </button>
-//           </div>
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// }

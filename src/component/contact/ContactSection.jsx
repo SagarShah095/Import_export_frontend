@@ -12,7 +12,7 @@ const locations = [
         phone: "6355687058"
     },
     {
-        city: "AHMEDABAD",
+        city: "Ahmednagar",
         address: "116, Transport Nagar, Aslali, Ahmedabad",
         phone: "6355696455"
     }
@@ -100,21 +100,21 @@ const ContactSection = () => {
             <div className="max-w-[85%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-0">
 
                 {/* Left Column: Locations */}
-                <div className='max-w-[80%] mx-auto'>
+                <div className='lg:max-w-[80%] mx-auto'>
                     <div className="flex items-center gap-3 mb-8">
                         <img src="/shep-design.svg" alt="icon" className="w-10 h-10" />
-                        <h2 className="text-3xl font-medium text-secondary">Locations</h2>
+                        <h2 className="md:text-3xl text-2xl font-medium text-secondary">Locations</h2>
                     </div>
 
                     <div className="bg-white shadow-xl border-t-[4px] border-primary p-8">
                         <div className="space-y-8">
                             {locations.map((loc, index) => (
                                 <div key={index} className="space-y-3 pb-8 border-b last:border-0 last:pb-0 border-gray-200">
-                                    <h3 className="text-2xl font-bold text-secondary flex items-center gap-2">
+                                    <h3 className="text-2xl uppercase font-bold text-secondary flex items-center gap-2">
                                         <GoDotFill className="text-primary text-xl" />
                                         {loc.city}
                                     </h3>
-                                    <div className="flex gap-3 text-[#6c757d] text-base">
+                                    <div className="flex gap-3 upe text-[#6c757d] text-base">
                                         <FaMapMarkerAlt className="text-primary mt-1 text-xl flex-shrink-0" />
                                         <p>{loc.address}</p>
                                     </div>
@@ -129,10 +129,10 @@ const ContactSection = () => {
                 </div>
 
                 {/* Right Column: Contact Form */}
-                <div>
+                <div className='mt-5 lg:mt-0'>
                     <div className="flex items-center gap-3 mb-8">
                         <img src="/shep-design.svg" alt="icon" className="w-10 h-10" />
-                        <h2 className="text-3xl font-medium text-secondary">Send Us <span className="text-primary">Message</span></h2>
+                        <h2 className="md:text-3xl text-2xl font-medium text-secondary">Send Us <span className="text-primary">Message</span></h2>
                     </div>
 
                     <div className="bg-primary p-8 md:p-10 relative overflow-hidden">

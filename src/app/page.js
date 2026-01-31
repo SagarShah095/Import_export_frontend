@@ -4,10 +4,10 @@ import Client from "@/component/home/Client";
 
 const Page = () => {
   return (
-    <main className="w-full min-h-screen bg-white">
-      <section className="relative w-full h-[42rem] bg-[url('/home-bg.png')] bg-cover bg-center bg-no-repeat">
+    <main className="w-full min-h-screen mt-20 md:mt-0 bg-white">
+      <section className="relative w-full min-h-[50rem] md:min-h-0 md:h-[42rem] bg-[url('/home-bg.png')] bg-cover bg-center bg-no-repeat">
         {/* Content Container */}
-        <div className="relative z-10 max-w-[1440px] mx-auto px-6 md:pl-[5rem] grid grid-cols-1 h-full items-center pt-20">
+        <div className="relative z-10 max-w-[1440px] mx-auto px-6 md:pl-[5rem] grid grid-cols-1 h-full items-center pt-10 md:pt-20 pb-32 md:pb-0">
           <div className="text-white space-y-6">
             <h1 className="text-4xl md:text-2xl lg:text-[2rem] 2xl:text-6xl 2xl:w-[40rem] font-bold leading-tight">
               <span className="text-primary">Logistics Mastery:</span> Delivering
@@ -28,7 +28,7 @@ const Page = () => {
 
         {/* Floating Tracking Card */}
         <div id="tracking-section" className="relative z-20 container mx-auto px-6 -mt-20 md:-mt-40 mb-20 flex justify-center md:justify-end">
-          <div className="absolute bg-primary z-10 rounded-2xl -top-1 w-full h-10 max-w-[31.9rem] opacity-100"></div>
+          <div className="absolute md:bg-primary z-10 rounded-2xl -top-1 w-full h-10 max-w-[31.9rem] opacity-100"></div>
           <div className="bg-white pt-5 rounded-2xl shadow-2xl z-50 p-6 md:p-8 w-full max-w-lg relative overflow-hidden">
             {/* Top Border Accent */}
 

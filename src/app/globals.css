@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+html,
+body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+html {
     scroll-padding-top: 120px;
     /* Offset for fixed navbar */
 }

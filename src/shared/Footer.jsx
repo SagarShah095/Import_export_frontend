@@ -13,7 +13,7 @@ import Link from 'next/link';
 
 const Footer = () => {
     return (
-        <footer className="text-white pt-20 md:pt-60 mt-10 min-h-[40rem] md:h-[40rem] pb-8 relative overflow-hidden bg-center bg-no-repeat bg-cover"
+        <footer className="text-white pt-44 md:pt-60 mt-10 min-h-[40rem] md:h-[40rem] pb-8 relative overflow-hidden bg-center bg-no-repeat bg-cover"
             style={{
                 backgroundImage: "url('/footerImg.png')",
             }}>
