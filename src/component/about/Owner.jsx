@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaPhoneAlt } from "react-icons/fa";
 
 const Owner = () => {
     return (
@@ -12,23 +13,34 @@ const Owner = () => {
 
                     {/* Gray Background Box */}
                     <img
-                        src="/about/owner.png"
-                        alt="Mr. Bharat Bhogayata"
-                        className="w-[83%] h-auto object-cover block mix-blend-darken bg-blend-multiply"
+                        src="/about/Owner_bg.jpeg"
+                        alt="Mr. Ramesh Kathat"
+                        className="w-[83%] h-[20rem] object-cover block mix-blend-darken bg-blend-multiply"
                     />
                 </div>
 
                 {/* Content Section */}
                 <div className="w-full max-w-[34rem] text-center md:text-left">
                     <h2 className="text-3xl md:text-3xl font-bold text-primary mb-2 uppercase">
-                        Mr. Bharat Bhogayata
+                        Mr. Ramesh Kathat
                     </h2>
                     <h3 className="text-md md:text-md font-bold text-secondary mb-6">
-                        Founder - Shobha Logistics
+                        Founder - Rohit Cargo and Logistics Services
                     </h3>
-                    <p className="text-[#6c757d] text-base font-[500] md:text-lg leading-relaxed">
-                        Mr. BHARAT BHOGAYATA is the founder of the company. He has 30+ years of experience in Courier and Cargo Industries.
+                    <p className="text-[#6c757d] text-base font-[500] md:text-lg leading-relaxed mb-6">
+                        Mr. RAMESH KATHAT is the founder of the company. He has 20+ years of experience in Courier and Cargo Industries.
                     </p>
+
+                    <div className="flex flex-col md:flex-row items-center md:items-start gap-3 md:gap-6">
+                        <a href="tel:9351719090" className="flex items-center gap-2 text-secondary font-bold hover:text-primary transition duration-300">
+                            <FaPhoneAlt className="text-primary text-lg" />
+                            <span>+91 93517 19090</span>
+                        </a>
+                        <a href="tel:9829674277" className="flex items-center gap-2 text-secondary font-bold hover:text-primary transition duration-300">
+                            <FaPhoneAlt className="text-primary text-lg" />
+                            <span>+91 98296 74277</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

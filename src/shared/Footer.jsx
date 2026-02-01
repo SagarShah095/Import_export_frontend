@@ -28,7 +28,7 @@ const Footer = () => {
                             <div className="w-10 h-10 bg-white rounded flex items-center justify-center">
                                 <img src="/Logo.jpeg" alt="Logo" className="w-full h-full object-contain mix-blend-multiply" />
                             </div>
-                            <h2 className="text-2xl font-bold">Shobha Logistics</h2>
+                            <h2 className="text-2xl font-bold">Rohit Cargo and Logistics Services</h2>
                         </div>
                         <p className="text-white mb-6 leading-relaxed">
                             Leading the way in logistics and transportation solutions.
@@ -120,7 +120,7 @@ const Footer = () => {
 
                 {/* Bottom Bar */}
                 <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-white text-sm">
-                    <p>© {new Date().getFullYear()} Shobha Logistics. All rights reserved.</p>
+                    <p>© {new Date().getFullYear()} Rohit Cargo and Logistics Services. All rights reserved.</p>
                     <div className="flex gap-6 mt-4 md:mt-0">
                         <a href="#" className="hover:text-primary transition">Privacy Policy</a>
                         <a href="#" className="hover:text-primary transition">Terms of Service</a>

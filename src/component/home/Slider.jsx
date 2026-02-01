@@ -8,12 +8,13 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 // Dummy data for logos since actual images aren't present
 const clientLogos = [
-    { name: "Delivery Hero", color: "#D6001C" },
-    { name: "Quero Delivery", color: "#8A2BE2" },
-    { name: "Flipkart", color: "#047BD5" },
-    { name: "Express Delivery", color: "#D6001C" },
-    { name: "Amazon", color: "#FF9900" },
-    { name: "DHL", color: "#FC0" }
+    { src: "/clients/Logo1.jpeg", alt: "Client 1" },
+    { src: "/clients/Logo2.jpeg", alt: "Client 2" },
+    { src: "/clients/Logo3.jpeg", alt: "Client 3" },
+    { src: "/clients/Logo4.jpeg", alt: "Client 4" },
+    { src: "/clients/Logo5.jpeg", alt: "Client 5" },
+    { src: "/clients/Logo6.jpeg", alt: "Client 6" },
+    { src: "/clients/Logo7.jpeg", alt: "Client 7" }
 ];
 
 const NextArrow = (props) => {
@@ -93,13 +94,11 @@ const ClientSlider = () => {
                                 boxShadow: "0 12px 12px -10px rgba(0,0,0,1)",
                             }}
                             className="bg-white p-4 md:p-6 border-t-[3px] border-primary flex items-center justify-center h-20 relative group hover:-translate-y-1 transition duration-300">
-                            {/* 
-                 Since real logos aren't available, using styled text to mimic the cards 
-                 Replace <h2> with <img src={logo.src} /> when available 
-               */}
-                            <h3 className="font-bold text-lg md:text-xl group-hover:scale-110 transition text-center leading-tight" style={{ color: logo.color }}>
-                                {logo.name}
-                            </h3>
+                            <img
+                                src={logo.src}
+                                alt={logo.alt}
+                                className="max-h-14 rounded-lg max-w-full object-contain group-hover:scale-110 transition duration-300"
+                            />
                         </div>
                     </div>
                 ))}

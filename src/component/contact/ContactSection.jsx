@@ -8,13 +8,18 @@ import { GoDotFill } from "react-icons/go";
 const locations = [
     {
         city: "BHIWANDI",
-        address: "C/11 Gala No.2 Parasnath Complex, Dapoda, Bhiwandi",
-        phone: "6355687058"
+        address: "119/120, E-10, Parasnath Complex, Owali, Valpada Road, Bhiwandi",
+        phone: "9351719090 / 9829674277"
     },
     {
         city: "Ahmednagar",
-        address: "116, Transport Nagar, Aslali, Ahmedabad",
-        phone: "6355696455"
+        address: "Sukkar Chwok,Beside Udaynraje Hotel,Near Shree Weighbridge Parking, Ahmednagar",
+        phone: "7220971111"
+    },
+    {
+        city: "Aurangabad",
+        address: "Plot No. 32, Gut No. 143, Satkarm Nagar, Behind Ayyappa Mandir, Beed Bypass Rd, Aurangabad",
+        phone: "9970962476"
     }
 ];
 
@@ -140,7 +145,7 @@ const ContactSection = () => {
                         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent bg-[length:20px_20px]"></div>
 
                         <div className="relative z-10 text-white mb-6 space-y-2">
-                            <p className="font-normal text-base">Connect with Shobha Logistics Courier: Send us your messages today!
+                            <p className="font-normal text-base">Connect with Rohit Cargo and Logistics Services: Send us your messages today!
                                 We're here to assist you with any inquiries or requests you may have.</p>
                             <p className="font-bold">Get in touch now!</p>
                         </div>
