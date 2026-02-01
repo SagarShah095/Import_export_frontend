@@ -7,7 +7,7 @@ const Who = () => {
                 {/* Title Section */}
                 <div className="flex items-center gap-3 mb-6">
                     <img src="/shep-design.svg" alt="icon" className="w-10 h-10" />
-                    <h2 className="text-22xl md:text-3xl font-medium text-secondary">Who We Are</h2>
+                    <h2 className="text-2xl md:text-3xl font-medium text-secondary">Who We Are</h2>
                 </div>
 
                 {/* Content */}
