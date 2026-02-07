@@ -12,7 +12,7 @@ const clients = [
 
 const SatisfiedClients = () => {
     return (
-        <section className="bg-white py-10 px-6 mb-10">
+        <section className="bg-white py-10 px-4 md:px-6 mb-10">
             <div className="max-w-screen-xl mx-auto flex flex-col items-center">
                 {/* Title Section */}
                 <div className="flex items-center gap-3 mb-10">
@@ -20,12 +20,12 @@ const SatisfiedClients = () => {
                     <h2 className="text-3xl md:text-3xl font-medium text-secondary">Our Satisfied Clients</h2>
                 </div>
 
-                {/* Grid - Changed to Flex to center the last row */}
-                <div className="flex flex-wrap justify-center gap-8 w-full">
+                {/* Grid of Client Logos */}
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
                     {clients.map((client, index) => (
                         <div
                             key={index}
-                            className="bg-white p-6 shadow-xl border-t-[4px] border-primary flex items-center justify-center h-32 hover:-translate-y-1 transition duration-300 relative group w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1.34rem)] lg:w-[calc(25%-1.5rem)]"
+                            className="bg-white p-4 shadow-xl border-t-[4px] border-primary flex items-center justify-center h-28 sm:h-32 hover:-translate-y-1 transition duration-300 relative group w-full"
                         >
                             <img
                                 src={client.src}

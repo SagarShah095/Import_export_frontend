@@ -12,7 +12,7 @@ const Who = () => {
 
                 {/* Content */}
                 <p className="text-[#6c757d] text-lg md:text-xl leading-relaxed max-w-[78rem] text-center">
-                    Rohit Cargo and Logistics Services was started on 01/02/2023 with a mission to provide the most efficient and cost-effective logistics solutions to its customers. Rohit Cargo and Logistics Services is a leading provider of logistics services for a various industries like e-commerce, retail and manufacturing. With its highly experienced team of professionals, Rohit Cargo and Logistics Services offers a wide range of services that are tailored to meet the needs of each individual customer. The company is dedicated to providing superior customer service and quality solutions that are designed to help businesses succeed.
+                    Rohit Cargo and Logistics was started on January 2019 with a mission to provide the most efficient and cost-effective logistics solutions to its customers. Rohit Cargo and Logistics is a leading provider of logistics services for a various industries like e-commerce, retail and manufacturing. With its highly experienced team of professionals, Rohit Cargo and Logistics offers a wide range of services that are tailored to meet the needs of each individual customer. The company is dedicated to providing superior customer service and quality solutions that are designed to help businesses succeed.
                 </p>
             </div>
         </section>

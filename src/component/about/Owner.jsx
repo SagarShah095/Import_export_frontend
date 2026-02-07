@@ -25,10 +25,10 @@ const Owner = () => {
                         Mr. Ramesh Kathat
                     </h2>
                     <h3 className="text-md md:text-md font-bold text-secondary mb-6">
-                        Founder - Rohit Cargo and Logistics Services
+                        Founder - Rohit Cargo and Logistics
                     </h3>
                     <p className="text-[#6c757d] text-base font-[500] md:text-lg leading-relaxed mb-6">
-                        Mr. RAMESH KATHAT is the founder of the company. He has 20+ years of experience in Courier and Cargo Industries and owns a fleet of 40+ vehicles.
+                        Mr. RAMESH KATHAT is the founder of the company. He has 20+ years of experience in Courier and Cargo Industries and owns a fleet of 40 vehicles.
                     </p>
 
                     <div className="flex flex-col md:flex-row items-center md:items-start gap-3 md:gap-6">

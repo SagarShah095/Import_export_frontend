@@ -145,7 +145,7 @@ const ContactSection = () => {
                         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent bg-[length:20px_20px]"></div>
 
                         <div className="relative z-10 text-white mb-6 space-y-2">
-                            <p className="font-normal text-base">Connect with Rohit Cargo and Logistics Services: Send us your messages today!
+                            <p className="font-normal text-base">Connect with Rohit Cargo and Logistics: Send us your messages today!
                                 We're here to assist you with any inquiries or requests you may have.</p>
                             <p className="font-bold">Get in touch now!</p>
                         </div>

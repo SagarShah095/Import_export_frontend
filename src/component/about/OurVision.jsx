@@ -13,7 +13,7 @@ const OurVision = () => {
                 {/* Content */}
                 <div className="text-[#9092a0] text-lg md:text-xl leading-relaxed max-w-[78rem] space-y-6 font-[400]">
                     <p>
-                        At Rohit Cargo and Logistics Services, our vision is to revolutionize the cargo industry by becoming the most trusted and preferred logistics partner globally. We strive to redefine the standards of express delivery through innovation, advanced technology, and a relentless commitment to customer satisfaction.
+                        At Rohit Cargo and Logistics, our vision is to revolutionize the cargo industry by becoming the most trusted and preferred logistics partner globally. We strive to redefine the standards of express delivery through innovation, advanced technology, and a relentless commitment to customer satisfaction.
                     </p>
                     <p className='px-10'>
                         To be a leader in the supply chain industry, providing reliable world class supply chain solutions and become the most valuable organization for all stakeholders.

@@ -101,7 +101,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center lg:items-end h-full px-4 lg:px-0">
 
         {/* Logo */}
-        <div className="cursor-pointer lg:pl-[5rem]" onClick={() => router.push('/')}>
+        <div className="cursor-pointer lg:pl-[3.5rem]" onClick={() => router.push('/')}>
           <img src="/Logo.jpeg" alt="logo" className="h-16 lg:h-24 object-contain" />
         </div>
 

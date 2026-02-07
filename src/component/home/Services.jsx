@@ -28,7 +28,7 @@ const servicesData = [
     {
         bgImage: "/home/img-4.png",
         title: "By Air Service",
-        description: "Experience the speed and efficiency of air transportation with Rohit Cargo and Logistics Services, ensuring your shipments reach their destination promptly.",
+        description: "Experience the speed and efficiency of air transportation with Rohit Cargo and Logistics, ensuring your shipments reach their destination promptly.",
         link: "/service#by-air-service"
     },
     {
@@ -74,7 +74,7 @@ const Services = () => {
                     data-aos="fade-up"
                     data-aos-delay="100"
                 >
-                    Rohit Cargo and Logistics Services: Your Trusted Partner in Transportation
+                    Rohit Cargo and Logistics: Your Trusted Partner in Transportation
                 </h3>
 
                 {/* Description */}
@@ -83,7 +83,7 @@ const Services = () => {
                     data-aos="fade-up"
                     data-aos-delay="200"
                 >
-                    Rohit Cargo and Logistics Services excels in express shipping, domestic cargo transport, and B2B logistics, offering swift and reliable solutions for your transportation needs, tailored to ensure efficient delivery and seamless business operations.
+                    Rohit Cargo and Logistics excels in express shipping, domestic cargo transport, and B2B logistics, offering swift and reliable solutions for your transportation needs, tailored to ensure efficient delivery and seamless business operations.
                 </p>
 
                 {/* Services Grid */}
