@@ -8,7 +8,7 @@ const clients = [
     { src: "/clients/Logo5.jpeg", alt: "Client 5" },
     { src: "/clients/Logo6.jpeg", alt: "Client 6" },
     { src: "/clients/Logo7.jpeg", alt: "Client 7" },
-    { src: "/clients/Logo8.svg", alt: "Client 8" },
+    { src: "/clients/Logo8.jpeg", alt: "Client 8" },
 ]
 
 const SatisfiedClients = () => {
