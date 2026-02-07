@@ -28,7 +28,7 @@ const Footer = () => {
                             <div className="w-10 h-10 bg-white rounded flex items-center justify-center">
                                 <img src="/Logo.jpeg" alt="Logo" className="w-full h-full object-contain mix-blend-multiply" />
                             </div>
-                            <h2 className="text-2xl font-bold">Rohit Cargo and Logistics</h2>
+                            <h2 className="text-xl font-bold">Rohit Cargo and Logistics</h2>
                         </div>
                         <p className="text-white mb-6 leading-relaxed">
                             Leading the way in logistics and transportation solutions.
@@ -104,11 +104,11 @@ const Footer = () => {
                         <ul className="space-y-4">
                             <li className="flex items-start gap-3 text-white">
                                 <FaMapMarkerAlt className="text-primary mt-1 text-lg flex-shrink-0" />
-                                <span>123 Logistics Way, Transport City, Global 54321</span>
+                                <span>Office No. 119, Building E-10, Parasnath Complex, Ovali Village, Valpada, Bhiwandi – 421302, Maharashtra</span>
                             </li>
                             <li className="flex items-center gap-3 text-white">
                                 <FaPhoneAlt className="text-primary flex-shrink-0" />
-                                <span>+1 (234) 567-8900</span>
+                                <span>+91 93517 19090</span>
                             </li>
                             <li className="flex items-center gap-3 text-white">
                                 <FaEnvelope className="text-primary flex-shrink-0" />
