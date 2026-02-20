@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import ClientSlider from './Slider'
 
 const Client = () => {
@@ -8,7 +9,7 @@ const Client = () => {
             <div
                 className="flex items-center justify-center gap-3 mb-4"
             >
-                <img src="/shep-design.svg" alt="icon" className="w-10 h-10" />
+                <Image src="/shep-design.svg" alt="icon" width={40} height={40} className="w-10 h-10" />
                 <h2 className="text-3xl font-medium text-secondary">Clients</h2>
             </div>
 

@@ -105,7 +105,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <div className="cursor-pointer lg:pl-[3.5rem]" onClick={() => router.push('/')}>
-          <img src="/Logo.jpeg" alt="logo" className="h-16 lg:h-24 object-contain" />
+          <Image src="/Logo.jpeg" alt="logo" width={96} height={96} className="h-16 lg:h-24 object-contain w-auto" priority />
         </div>
 
         {/* Desktop Nav Items (Hidden on Mobile/Tablet) */}

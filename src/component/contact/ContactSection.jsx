@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import Image from 'next/image';
 import toast, { Toaster } from 'react-hot-toast';
 import { FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 import { BiCurrentLocation } from 'react-icons/bi';
@@ -107,7 +108,7 @@ const ContactSection = () => {
                 {/* Left Column: Locations */}
                 <div className='lg:max-w-[80%] mx-auto'>
                     <div className="flex items-center gap-3 mb-8">
-                        <img src="/shep-design.svg" alt="icon" className="w-10 h-10" />
+                        <Image src="/shep-design.svg" alt="icon" width={40} height={40} className="w-10 h-10" />
                         <h2 className="md:text-3xl text-2xl font-medium text-secondary">Locations</h2>
                     </div>
 
@@ -136,7 +137,7 @@ const ContactSection = () => {
                 {/* Right Column: Contact Form */}
                 <div className='mt-5 lg:mt-0'>
                     <div className="flex items-center gap-3 mb-8">
-                        <img src="/shep-design.svg" alt="icon" className="w-10 h-10" />
+                        <Image src="/shep-design.svg" alt="icon" width={40} height={40} className="w-10 h-10" />
                         <h2 className="md:text-3xl text-2xl font-medium text-secondary">Send Us <span className="text-primary">Message</span></h2>
                     </div>
 
@@ -212,7 +213,7 @@ const ContactSection = () => {
                                         />
                                         <span className="text-sm text-gray-700">I&apos;m not a robot</span>
                                         <div className="ml-4 flex flex-col items-center">
-                                            <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="captcha" className="w-8 opacity-50" />
+                                            <Image src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="captcha" width={32} height={32} className="w-8 opacity-50" />
                                             <span className="text-[10px] text-gray-500">reCAPTCHA</span>
                                         </div>
                                     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const WhatWeDo = () => {
     return (
@@ -8,7 +9,7 @@ const WhatWeDo = () => {
                 {/* Header Section */}
                 <div className="text-center max-w-[73rem] mx-auto">
                     <div className="flex items-center justify-center gap-3 mb-6">
-                        <img src="/shep-design.svg" alt="icon" className="w-10 h-10" />
+                        <Image src="/shep-design.svg" alt="icon" width={40} height={40} className="w-10 h-10" />
                         <h2 className="text-3xl md:text-3xl font-medium text-secondary">What we do for You</h2>
                     </div>
                     <p className="text-[#6c757d] text-base md:text-xl  text-center font-normal">
@@ -20,7 +21,7 @@ const WhatWeDo = () => {
                 <div id="express-service" className="flex md:w-[95%] w-[100%] mx-auto flex-col md:flex-row items-center gap-10 md:gap-2">
                     <div className="w-full md:w-1/2 flex justify-center relative flex-col items-center">
                         {/* Decoration Line - Positioned relative to the gray box container */}
-                        <img src="/home/img-1.png" alt="Express Service" className="w-[80%] h-auto object-cover" />
+                        <Image src="/home/img-1.png" alt="Express Service" width={500} height={400} className="w-[80%] h-auto object-cover" />
                     </div>
                     <div className="w-full md:w-1/2 space-y-4">
                         <h3 className="text-2xl md:text-3xl font-bold text-primary">Express Service</h3>
@@ -34,7 +35,7 @@ const WhatWeDo = () => {
                 <div id="domestic-cargo-service" className="flex md:w-[95%] w-[100%] mx-auto flex-col md:flex-row-reverse items-center gap-10 md:gap-2">
                     <div className="w-full md:w-1/2 flex justify-center relative flex-col items-center">
                         {/* Decoration Line */}
-                        <img src="/home/img-2.png" alt="Domestic Cargo Service" className="w-[80%] h-auto object-cover" />
+                        <Image src="/home/img-2.png" alt="Domestic Cargo Service" width={500} height={400} className="w-[80%] h-auto object-cover" />
                     </div>
                     <div className="w-full md:w-1/2 space-y-4">
                         <h3 className="text-2xl md:text-3xl font-bold text-primary">Domestic Cargo Service</h3>
@@ -48,7 +49,7 @@ const WhatWeDo = () => {
                 <div id="b2b-cargo-service" className="flex md:w-[95%] w-[100%] mx-auto flex-col md:flex-row items-center gap-10 md:gap-2">
                     <div className="w-full md:w-1/2 flex justify-center relative flex-col items-center">
                         {/* Decoration Line */}
-                        <img src="/home/img-3.png" alt="B2B Cargo Service" className="w-[80%] h-auto object-cover" />
+                        <Image src="/home/img-3.png" alt="B2B Cargo Service" width={500} height={400} className="w-[80%] h-auto object-cover" />
                     </div>
                     <div className="w-full md:w-1/2 space-y-4">
                         <h3 className="text-2xl md:text-3xl font-bold text-primary">B2B Cargo Service</h3>
@@ -62,7 +63,7 @@ const WhatWeDo = () => {
                 <div id="by-air-service" className="flex md:w-[95%] w-[100%] mx-auto flex-col md:flex-row-reverse items-center gap-10 md:gap-2">
                     <div className="w-full md:w-1/2 flex justify-center relative flex-col items-center">
                         {/* Decoration Line */}
-                        <img src="/home/img-4.png" alt="By Air Service" className="w-[80%] h-auto object-cover" />
+                        <Image src="/home/img-4.png" alt="By Air Service" width={500} height={400} className="w-[80%] h-auto object-cover" />
                     </div>
                     <div className="w-full md:w-1/2 space-y-4">
                         <h3 className="text-2xl md:text-3xl font-bold text-primary">By Air Service</h3>
@@ -76,7 +77,7 @@ const WhatWeDo = () => {
                 <div id="by-road-service" className="flex md:w-[95%] w-[100%] mx-auto flex-col md:flex-row items-center gap-10 md:gap-2">
                     <div className="w-full md:w-1/2 flex justify-center relative flex-col items-center">
                         {/* Decoration Line */}
-                        <img src="/home/img-5.png" alt="By Road Service" className="w-[80%] h-auto object-cover" />
+                        <Image src="/home/img-5.png" alt="By Road Service" width={500} height={400} className="w-[80%] h-auto object-cover" />
                     </div>
                     <div className="w-full md:w-1/2 space-y-4">
                         <h3 className="text-2xl md:text-3xl font-bold text-primary">By Road Service</h3>

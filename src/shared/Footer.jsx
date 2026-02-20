@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
     return (
@@ -25,8 +26,8 @@ const Footer = () => {
                     <div>
                         <div className="flex items-center gap-2 mb-6">
                             {/* Logo Placeholder */}
-                            <div className="w-10 h-10 bg-white rounded flex items-center justify-center">
-                                <img src="/Logo.jpeg" alt="Logo" className="w-full h-full object-contain mix-blend-multiply" />
+                            <div className="w-10 h-10 bg-white rounded flex items-center justify-center relative">
+                                <Image src="/Logo.jpeg" alt="Logo" fill className="object-contain mix-blend-multiply p-1" />
                             </div>
                             <h2 className="text-xl font-bold">Rohit Cargo and Logistics</h2>
                         </div>

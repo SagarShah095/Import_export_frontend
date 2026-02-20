@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaPhoneAlt } from "react-icons/fa";
+import Image from 'next/image';
 
 const Owner = () => {
     return (
@@ -12,11 +13,14 @@ const Owner = () => {
                     {/* <div className="w-[90%] h-1.5 bg-primary mb-0 z-10"></div> */}
 
                     {/* Gray Background Box */}
-                    <img
-                        src="/about/Owner_bg.jpeg"
-                        alt="Mr. Ramesh Kathat"
-                        className="w-[83%] h-[20rem] object-cover block mix-blend-darken bg-blend-multiply"
-                    />
+                    <div className="relative w-[83%] h-[20rem]">
+                        <Image
+                            src="/about/Owner_bg.jpeg"
+                            alt="Mr. Ramesh Kathat"
+                            fill
+                            className="object-cover block mix-blend-darken bg-blend-multiply"
+                        />
+                    </div>
                 </div>
 
                 {/* Content Section */}

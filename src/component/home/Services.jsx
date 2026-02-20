@@ -2,6 +2,7 @@
 
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { BsArrowUpRight } from 'react-icons/bs';
@@ -64,7 +65,7 @@ const Services = () => {
                     className="flex items-center justify-center gap-3 mb-4"
                     data-aos="fade-down"
                 >
-                    <img src="/shep-design.svg" alt="icon" className="w-10 h-10" />
+                    <Image src="/shep-design.svg" alt="icon" width={40} height={40} className="w-10 h-10" />
                     <h2 className="text-3xl font-medium text-secondary">Services</h2>
                 </div>
 

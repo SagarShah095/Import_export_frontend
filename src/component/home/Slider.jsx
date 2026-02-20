@@ -2,6 +2,7 @@
 
 import React from "react";
 import Slider from "react-slick";
+import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
@@ -95,9 +96,11 @@ const ClientSlider = () => {
                                 boxShadow: "0 12px 12px -10px rgba(0,0,0,1)",
                             }}
                             className="bg-white p-4 md:p-6 border-t-[3px] border-primary flex items-center justify-center h-20 relative group hover:-translate-y-1 transition duration-300">
-                            <img
+                            <Image
                                 src={logo.src}
                                 alt={logo.alt}
+                                width={100}
+                                height={60}
                                 className="max-h-14 rounded-lg max-w-full object-contain group-hover:scale-110 transition duration-300"
                             />
                         </div>

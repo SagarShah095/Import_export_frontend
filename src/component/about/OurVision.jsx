@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const OurVision = () => {
     return (
@@ -6,7 +7,7 @@ const OurVision = () => {
             <div className="max-w-screen-xl mx-auto flex flex-col items-center text-center">
                 {/* Title Section */}
                 <div className="flex items-center gap-3 mb-6">
-                    <img src="/shep-design.svg" alt="icon" className="w-10 h-10" />
+                    <Image src="/shep-design.svg" alt="icon" width={40} height={40} className="w-10 h-10" />
                     <h2 className="text-3xl md:text-3xl font-medium text-secondary">Our Vision</h2>
                 </div>
 

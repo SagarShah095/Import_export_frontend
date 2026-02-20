@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 const TrackingCard = () => {
     const [shipmentType, setShipmentType] = useState("single");
@@ -17,7 +18,7 @@ const TrackingCard = () => {
                 <div className="flex items-center gap-2 mb-6">
                     {/* Diamond Icon Placeholder for design match */}
                     <div className="relative flex items-center justify-center">
-                        <img src="/shep-design.svg" alt="icon" className="w-8 h-8" />
+                        <Image src="/shep-design.svg" alt="icon" width={32} height={32} className="w-8 h-8" />
                     </div>
                     <h3 className="text-2xl font-bold text-secondary">
                         Track Your Shipment
