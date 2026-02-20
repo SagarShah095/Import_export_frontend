@@ -36,10 +36,17 @@ const Footer = () => {
                         </p>
                         {/* Social Icons */}
                         <div className="flex gap-4">
-                            {[FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn].map((Icon, idx) => (
+                            {[
+                                { Icon: FaFacebookF, link: "#" },
+                                { Icon: FaTwitter, link: "#" },
+                                { Icon: FaInstagram, link: "https://www.instagram.com/rohitcargo.in?igsh=MWFvcDJqYWRtenN1bQ==" },
+                                { Icon: FaLinkedinIn, link: "#" }
+                            ].map(({ Icon, link }, idx) => (
                                 <a
                                     key={idx}
-                                    href="#"
+                                    href={link}
+                                    target={link !== "#" ? "_blank" : "_self"}
+                                    rel={link !== "#" ? "noopener noreferrer" : ""}
                                     className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition duration-300"
                                 >
                                     <Icon className="text-white" />
@@ -112,7 +119,7 @@ const Footer = () => {
                             </li>
                             <li className="flex items-center gap-3 text-white">
                                 <FaEnvelope className="text-primary flex-shrink-0" />
-                                <span>info@rohitcargo.com</span>
+                                <span>rohitcargo.bwd@gmail.com</span>
                             </li>
                         </ul>
                     </div>

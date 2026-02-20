@@ -146,7 +146,7 @@ const ContactSection = () => {
 
                         <div className="relative z-10 text-white mb-6 space-y-2">
                             <p className="font-normal text-base">Connect with Rohit Cargo and Logistics: Send us your messages today!
-                                We're here to assist you with any inquiries or requests you may have.</p>
+                                We&apos;re here to assist you with any inquiries or requests you may have.</p>
                             <p className="font-bold">Get in touch now!</p>
                         </div>
 
@@ -210,7 +210,7 @@ const ContactSection = () => {
                                             onChange={handleChange}
                                             className="w-5 h-5 rounded border-gray-300 cursor-pointer"
                                         />
-                                        <span className="text-sm text-gray-700">I'm not a robot</span>
+                                        <span className="text-sm text-gray-700">I&apos;m not a robot</span>
                                         <div className="ml-4 flex flex-col items-center">
                                             <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="captcha" className="w-8 opacity-50" />
                                             <span className="text-[10px] text-gray-500">reCAPTCHA</span>

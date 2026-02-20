@@ -53,11 +53,6 @@ export default function Navbar() {
     return () => clearTimeout(timeoutId);
   }, [pathname]); // Re-run on path change
 
-  const getIndexFromPath = () =>
-    navItems.findIndex((item) => item.href === pathname);
-
-  const [activeIndex, setActiveIndex] = useState(getIndexFromPath);
-
   useEffect(() => {
     if (!barRef.current) return;
 
@@ -73,12 +68,20 @@ export default function Navbar() {
     return () => window.removeEventListener("resize", updateStep);
   }, []);
 
-  useEffect(() => {
-    const newIndex = getIndexFromPath();
+  const [activeIndex, setActiveIndex] = useState(() => {
+    const idx = navItems.findIndex((item) => item.href === pathname);
+    return idx !== -1 ? idx : 0;
+  });
+
+  const [prevPathname, setPrevPathname] = useState(pathname);
+
+  if (pathname !== prevPathname) {
+    setPrevPathname(pathname);
+    const newIndex = navItems.findIndex((item) => item.href === pathname);
     if (newIndex !== -1) {
       setActiveIndex(newIndex);
     }
-  }, [pathname]);
+  }
 
   const handleNavClick = (item) => {
     if (item.name === "Tracking") {
@@ -126,7 +129,9 @@ export default function Navbar() {
           {/* Social Icons */}
           <div className="flex justify-end items-center px-5 h-full gap-3 relative z-20">
             <FaFacebook className="h-5 w-5 text-white hover:scale-110 transition cursor-pointer" />
-            <PiInstagramLogoFill className="h-5 w-5 text-white hover:scale-110 transition cursor-pointer" />
+            <a href="https://www.instagram.com/rohitcargo.in?igsh=MWFvcDJqYWRtenN1bQ==" target="_blank" rel="noopener noreferrer">
+              <PiInstagramLogoFill className="h-5 w-5 text-white hover:scale-110 transition cursor-pointer" />
+            </a>
             <FaLinkedinIn className="h-5 w-5 text-white hover:scale-110 transition cursor-pointer" />
             <RiTwitterXLine className="h-5 w-5 text-white hover:scale-110 transition cursor-pointer" />
           </div>

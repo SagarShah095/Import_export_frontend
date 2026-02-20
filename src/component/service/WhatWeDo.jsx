@@ -12,7 +12,7 @@ const WhatWeDo = () => {
                         <h2 className="text-3xl md:text-3xl font-medium text-secondary">What we do for You</h2>
                     </div>
                     <p className="text-[#6c757d] text-base md:text-xl  text-center font-normal">
-                        "Rohit Cargo and Logistics provides comprehensive transportation solutions: Shipway for flexible shipping, By Road for reliable ground transport, and By Air for swift deliveries, ensuring seamless shipment management tailored to your needs."
+                        &quot;Rohit Cargo and Logistics provides comprehensive transportation solutions: Shipway for flexible shipping, By Road for reliable ground transport, and By Air for swift deliveries, ensuring seamless shipment management tailored to your needs.&quot;
                     </p>
                 </div>
 
@@ -25,7 +25,7 @@ const WhatWeDo = () => {
                     <div className="w-full md:w-1/2 space-y-4">
                         <h3 className="text-2xl md:text-3xl font-bold text-primary">Express Service</h3>
                         <p className="text-[#6c757d] text-lg font-medium  text-justify">
-                            Swift Express Service ensures prompt delivery, tailored for urgent shipments with reliability and efficiency. Rohit Cargo and Logistics Express Service is a testament to our commitment to swift and efficient logistics solutions. With globalization driving the need for rapid deliveries, our Express Service stands as a beacon of reliability. Utilizing a blend of advanced technology and a dedicated workforce, we guarantee expedited deliveries, even within the tightest timelines. Whether it's urgent documents, perishable goods, or time-sensitive packages, our Express Service ensures they reach their destination promptly, enabling businesses and individuals to stay ahead in today's fast-paced world.
+                            Swift Express Service ensures prompt delivery, tailored for urgent shipments with reliability and efficiency. Rohit Cargo and Logistics Express Service is a testament to our commitment to swift and efficient logistics solutions. With globalization driving the need for rapid deliveries, our Express Service stands as a beacon of reliability. Utilizing a blend of advanced technology and a dedicated workforce, we guarantee expedited deliveries, even within the tightest timelines. Whether it&apos;s urgent documents, perishable goods, or time-sensitive packages, our Express Service ensures they reach their destination promptly, enabling businesses and individuals to stay ahead in today&apos;s fast-paced world.
                         </p>
                     </div>
                 </div>
@@ -67,7 +67,7 @@ const WhatWeDo = () => {
                     <div className="w-full md:w-1/2 space-y-4">
                         <h3 className="text-2xl md:text-3xl font-bold text-primary">By Air Service</h3>
                         <p className="text-[#6c757d] text-lg font-medium text-justify">
-                            Experience the speed and efficiency of air transportation with Rohit Cargo and Logistics. Our By Air service ensures your time-sensitive shipments reach their global or domestic destinations promptly. Whether it's high-value cargo, urgent documentation, or perishable goods, our dedicated air freight solutions offer real-time tracking, secure handling, and the fastest transit times available, connecting you to markets worldwide with ease.
+                            Experience the speed and efficiency of air transportation with Rohit Cargo and Logistics. Our By Air service ensures your time-sensitive shipments reach their global or domestic destinations promptly. Whether it&apos;s high-value cargo, urgent documentation, or perishable goods, our dedicated air freight solutions offer real-time tracking, secure handling, and the fastest transit times available, connecting you to markets worldwide with ease.
                         </p>
                     </div>
                 </div>
