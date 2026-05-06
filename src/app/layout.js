@@ -35,21 +35,6 @@ export const metadata = {
       { url: '/favicons/apple-icon-152x152.png', sizes: '152x152', type: 'image/png' },
       { url: '/favicons/apple-icon-180x180.png', sizes: '180x180', type: 'image/png' },
     ],
-<<<<<<< HEAD
-    other: [
-      {
-        rel: 'apple-touch-icon-precomposed',
-        url: '/favicons/apple-icon-precomposed.png',
-      },
-    ],
-  },
-  manifest: '/favicons/manifest.json',
-  other: {
-    'msapplication-TileColor': '#ffffff',
-    'msapplication-TileImage': '/favicons/ms-icon-144x144.png',
-    'theme-color': '#ffffff',
-=======
->>>>>>> 11394642692af13cc3a8f711ea49309b8c649862
   },
   other: {
     'msapplication-TileColor': '#ffffff',
