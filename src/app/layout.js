@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Rohit Cargo and Logistics",
   description: "Rohit Cargo and Logistics",
+  manifest: "/favicons/manifest.json",
   icons: {
     icon: [
       { url: '/favicons/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
@@ -34,6 +35,7 @@ export const metadata = {
       { url: '/favicons/apple-icon-152x152.png', sizes: '152x152', type: 'image/png' },
       { url: '/favicons/apple-icon-180x180.png', sizes: '180x180', type: 'image/png' },
     ],
+<<<<<<< HEAD
     other: [
       {
         rel: 'apple-touch-icon-precomposed',
@@ -46,7 +48,17 @@ export const metadata = {
     'msapplication-TileColor': '#ffffff',
     'msapplication-TileImage': '/favicons/ms-icon-144x144.png',
     'theme-color': '#ffffff',
+=======
+>>>>>>> 11394642692af13cc3a8f711ea49309b8c649862
   },
+  other: {
+    'msapplication-TileColor': '#ffffff',
+    'msapplication-TileImage': '/favicons/ms-icon-144x144.png',
+  }
+};
+
+export const viewport = {
+  themeColor: '#ffffff',
 };
 
 export default function RootLayout({ children }) {
