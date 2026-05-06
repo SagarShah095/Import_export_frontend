@@ -41,7 +41,8 @@ const Footer = () => {
                                 { Icon: FaFacebookF, link: "#" },
                                 { Icon: FaTwitter, link: "#" },
                                 { Icon: FaInstagram, link: "https://www.instagram.com/rohitcargo.in?igsh=MWFvcDJqYWRtenN1bQ==" },
-                                { Icon: FaLinkedinIn, link: "#" }
+                                { Icon: FaLinkedinIn, link: "#" },
+                                { Icon: FaMapMarkerAlt, link: "https://www.google.com/maps/place/19%C2%B015'24.9%22N+73%C2%B002'57.5%22E/@19.2889873,73.035829,11.55z/data=!4m4!3m3!8m2!3d19.2569286!4d73.0492985?hl=en&entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D" }
                             ].map(({ Icon, link }, idx) => (
                                 <a
                                     key={idx}
@@ -120,7 +121,7 @@ const Footer = () => {
                             </li>
                             <li className="flex items-center gap-3 text-white">
                                 <FaEnvelope className="text-primary flex-shrink-0" />
-                                <span>rohitcargo.bwd@gmail.com</span>
+                                <span>info@rohitcargo.com</span>
                             </li>
                         </ul>
                     </div>
